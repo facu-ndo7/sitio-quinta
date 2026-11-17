@@ -1,0 +1,80 @@
+/* Estilos generales del Header */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0d0d0d; /* Fondo oscuro */
+  padding: 15px 40px;
+  border-bottom: 2px solid #221f14; /* Sutil línea divisoria inferior */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+/* Sección del Logo */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-logo img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.nav-titles h1 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.nav-titles span {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #d4af37; /* Tono dorado característico */
+}
+
+/* Enlaces del menú */
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #c4c4c4;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-links a:hover {
+  color: #d4af37;
+}
+
+
+/* Botón de Reservar */
+.btn-reservar {
+  background-color: #d4af37;
+  color: #0d0d0d;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-reservar:hover {
+  background-color: #e6be42;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}

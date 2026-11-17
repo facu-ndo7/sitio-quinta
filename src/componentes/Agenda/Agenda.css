@@ -1,0 +1,201 @@
+/* Contenedor principal de la sección */
+.availability-section {
+  background-color: #131314;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Tarjeta contenedora principal */
+.availability-card {
+  background-color: #1c1b1c;
+  border: 1px solid #222222;
+  border-radius: 12px;
+  padding: 35px 40px;
+  width: 100%;
+  max-width: 1100px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+/* Cabecera superior */
+.card-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.availability-tag {
+  color: #2ecc71; /* Verde esmeralda */
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.card-header-top h2 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.card-header-top p {
+  color: #8c8c8c;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* Pestañas de Tipo de Cancha */
+.pitch-tabs {
+  display: flex;
+  background-color: #0d0d0d;
+  border: 1px solid #1f1f1f;
+  border-radius: 8px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.tab-btn {
+  background: transparent;
+  border: none;
+  color: #8c8c8c;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+  background-color: #d4af37; /* Dorado */
+  color: #0b0b0b;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
+}
+
+.tab-btn:not(.active):hover {
+  color: #ffffff;
+}
+
+/* Controles inferiores (Selectores y Botón) */
+.card-controls {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr 1.1fr;
+  gap: 15px;
+  align-items: center;
+}
+
+.control-group {
+  background-color: #0d0d0d;
+  border: 1px solid #1f1f1f;
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.control-group:hover {
+  border-color: #333333;
+}
+
+.control-group label {
+  color: #d4af37; /* Dorado */
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.select-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.select-wrapper svg {
+  color: #737373;
+}
+
+/* Botón Consultar Turno */
+.btn-consultar {
+  background-color: #00b862; /* Verde vibrante */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 18px 20px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 184, 98, 0.25);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.btn-consultar:hover {
+  background-color: #00ca6c;
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 184, 98, 0.4);
+}
+
+/* Diseño Responsivo para tablets y móviles */
+@media (max-width: 992px) {
+  .card-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .btn-consultar {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .availability-card {
+    padding: 25px 20px;
+  }
+
+  .card-header-top h2 {
+    font-size: 1.4rem;
+  }
+
+  .pitch-tabs {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .tab-btn {
+    padding: 8px 10px;
+    font-size: 0.65rem;
+    flex: 1;
+    text-align: center;
+  }
+
+  .card-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-consultar {
+    grid-column: span 1;
+  }
+}

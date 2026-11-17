@@ -1,0 +1,189 @@
+/* Contenedor Principal */
+.infrastructure-section {
+  background-color: #131314;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Fondo a todo el ancho: el contenido queda centrado con padding dinámico */
+  padding: 60px max(20px, calc((100% - 1250px) / 2));
+}
+
+/* Encabezado */
+.infra-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.infra-tag {
+  color: #d4af37; /* Dorado */
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.infra-header h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+}
+
+.infra-header p {
+  color: #8c8c8c;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Cuadrícula Principal (Grid Asimétrico) */
+.infra-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Estilos base de las tarjetas */
+.infra-card {
+  background-color: #141414;
+  border: 1px solid #222222;
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.infra-card:hover {
+  border-color: #d4af37;
+  transform: translateY(-2px);
+}
+
+/* Tarjeta alta izquierda (Césped) */
+.card-tall {
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+}
+
+/* Columna derecha contenedora */
+.infra-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Fila de 2 tarjetas */
+.infra-row-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Tarjetas pequeñas */
+.card-small {
+  padding: 25px;
+  justify-content: flex-start;
+}
+
+/* Tarjeta banner intermedia (Bar) */
+.card-banner {
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+}
+
+/* Contenido inferior en tarjetas con imagen */
+.card-content-bottom {
+  z-index: 2;
+}
+
+/* Insignias y etiquetas */
+.card-badge {
+  background-color: #00b862;
+  color: #ffffff;
+  font-size: 0.62rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.card-subtitle-tag {
+  color: #d4af37;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Títulos y textos dentro de tarjetas */
+.infra-card h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin: 0 0 10px;
+}
+
+.infra-card p {
+  color: #8c8c8c;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Cajas de iconos dorados */
+.card-icon-box {
+  width: 40px;
+  height: 40px;
+  background-color: #1f1b10;
+  border: 1px solid #3d341c;
+  color: #d4af37;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.parking-icon {
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+/* Responsivo para tablets y móviles */
+@media (max-width: 992px) {
+  .infra-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-tall {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .infra-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .infra-row-duo {
+    grid-template-columns: 1fr;
+  }
+  
+  .infra-card {
+    padding: 20px;
+  }
+}

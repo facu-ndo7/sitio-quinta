@@ -1,0 +1,241 @@
+
+/* Contenedor Principal */
+.footer-container {
+  background-color: #0b0b0b;
+  color: #a3a3a3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 60px 50px 30px;
+  border-top: 1px solid #1f1f1f;
+}
+
+/* Grilla de 4 columnas */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1.1fr 1.1fr 1.2fr;
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto 50px;
+}
+
+/* Títulos de las columnas en Dorado */
+.footer-heading {
+  color: #d4af37;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Columna 1: Marca */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.footer-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.footer-brand h2 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.footer-desc {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0 0 22px;
+  color: #9e9e9e;
+}
+
+/* Botones de contacto/redes */
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.social-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background-color: #1f1f1f;
+  color: #d4af37;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.social-box:hover {
+  background-color: #d4af37;
+  color: #0b0b0b;
+}
+
+/* Columna 2: Horarios */
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+}
+
+.schedule-list li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.schedule-list li:first-child {
+  padding-top: 0;
+}
+
+.schedule-list strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.night-shift-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2ecc71; /* Verde esmeralda */
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Columna 3: Acceso Directo */
+.quick-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-links li {
+  margin-bottom: 12px;
+}
+
+.quick-links a {
+  color: #a3a3a3;
+  text-decoration: none;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.quick-links a::before {
+  content: '›';
+  color: #737373;
+  font-size: 1.2rem;
+  margin-right: 8px;
+  line-height: 1;
+}
+
+.quick-links a:hover {
+  color: #d4af37;
+  transform: translateX(4px);
+}
+
+.quick-links a:hover::before {
+  color: #d4af37;
+}
+
+/* Columna 4: Tarjeta de Google Maps */
+.map-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(180deg, #2b271c 0%, #242118 100%);
+  border: 1px solid #3d3624;
+  border-radius: 8px;
+  padding: 22px 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.map-card:hover {
+  border-color: #d4af37;
+  transform: translateY(-2px);
+}
+
+.map-icon {
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.map-title {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.map-subtitle {
+  color: #a3a3a3;
+  font-size: 0.72rem;
+}
+
+/* Barra Inferior */
+.footer-bottom {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 25px;
+  border-top: 1px solid #1f1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #737373;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.legal-links {
+  display: flex;
+  gap: 25px;
+}
+
+.legal-links a {
+  color: #737373;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.legal-links a:hover {
+  color: #d4af37;
+}
+
+/* Diseño Responsivo para pantallas pequeñas */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    padding: 40px 25px 25px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
