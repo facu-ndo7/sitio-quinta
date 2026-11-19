@@ -1,4 +1,22 @@
+:root {
+  /* Alto de la barra de navegación (padding + contenido + borde) */
+  --nav-height: 77px;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* El scroll se detiene en cada sección, de a una por pantalla */
+  scroll-snap-type: y proximity;
+}
+
 body {
-    margin: 0;
-    background-color: #0d0d0d;
+  margin: 0;
+  background-color: #0d0d0d;
+}
+
+/* Respeta a los usuarios que prefieren menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

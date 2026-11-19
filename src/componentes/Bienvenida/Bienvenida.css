@@ -3,11 +3,17 @@
   background-color: #0b0b0b;
   color: #ffffff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 60px 20px 40px;
+  /* Ocupa (al menos) toda la pantalla disponible bajo la barra */
+  min-height: calc(100vh - var(--nav-height));
+  min-height: calc(100svh - var(--nav-height));
+  padding: clamp(40px, 7vh, 90px) 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  scroll-snap-align: start;
+  scroll-margin-top: var(--nav-height);
 }
 
 /* Contenido de textos */

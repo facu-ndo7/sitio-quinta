@@ -1,10 +1,17 @@
 /* Contenedor principal de la sección */
 .availability-section {
   background-color: #131314;
-  padding: 40px 20px;
+  /* Ocupa (al menos) toda la pantalla disponible bajo la barra */
+  min-height: calc(100vh - var(--nav-height));
+  min-height: calc(100svh - var(--nav-height));
+  padding: clamp(50px, 9vh, 120px) 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-snap-align: start;
+  scroll-margin-top: var(--nav-height);
 }
 
 /* Tarjeta contenedora principal */

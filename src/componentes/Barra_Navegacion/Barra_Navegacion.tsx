@@ -15,14 +15,14 @@ export default function Barra_Navegacion()
             </div>
 
             <nav className="nav-links">
-                <a href="#">INICIO</a>
-                <a href="#">CANCHAS & PREDIO</a>
-                <a href="#">ALQUILAR CANCHA</a>
-                <a href="#">CONTACTO</a>
+                <a href="#inicio">INICIO</a>
+                <a href="#agenda">ALQUILAR CANCHA</a>
+                <a href="#infraestructura">CANCHAS & PREDIO</a>
+                <a href="#footer">CONTACTO</a>
             </nav>
 
             <div className="nav-action">
-                <a href="#" className="btn-reservar">RESERVAR AHORA</a>
+                <a href="#agenda" className="btn-reservar">RESERVAR AHORA</a>
             </div>
         </header>
         </>

@@ -4,7 +4,7 @@ export default function Agenda()
 {
     return (
         <>
-        <section className="availability-section">
+        <section className="availability-section" id="agenda">
             <div className="availability-card">
 
                 <div className="card-header-top">

@@ -4,7 +4,7 @@ export default function Bienvenida()
 {
     return(
         <>
-        <section className="hero-section">
+        <section className="hero-section" id="inicio">
             <div className="hero-content">
                 <h1 className="hero-title">
                 VIVÍ EL FÚTBOL EN SU <span className="highlight">MÁXIMO NIVEL</span>
@@ -14,7 +14,7 @@ export default function Bienvenida()
                 </p>
                 
                 <div className="hero-buttons">
-                <a href="#" className="btn-primary">
+                <a href="#agenda" className="btn-primary">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg>
                     ALQUILAR TURNO ONLINE
                 </a>

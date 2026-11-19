@@ -4,7 +4,7 @@ export default function Footer()
 {
     return(
         <>
-        <footer className="footer-container">
+        <footer className="footer-container" id="footer">
             <div className="footer-grid">
                 
                 <div className="footer-col brand-col">

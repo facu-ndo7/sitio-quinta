@@ -3,14 +3,22 @@
   background-color: #0b0b0b;
   color: #ffffff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* Fondo a todo el ancho: el contenido queda centrado con padding dinámico */
-  padding: 60px max(20px, calc((100% - 1250px) / 2));
+  /* Ocupa (al menos) toda la pantalla disponible bajo la barra.
+     Fondo a todo el ancho: el contenido queda centrado con padding dinámico */
+  min-height: calc(100vh - var(--nav-height));
+  min-height: calc(100svh - var(--nav-height));
+  padding: clamp(40px, 7vh, 90px) max(20px, calc((100% - 1250px) / 2));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: start;
+  scroll-margin-top: var(--nav-height);
 }
 
 /* Encabezado */
 .testimonials-header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: clamp(25px, 4vh, 50px);
 }
 
 .testimonials-tag {

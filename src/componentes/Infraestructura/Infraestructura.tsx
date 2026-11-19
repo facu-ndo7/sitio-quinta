@@ -4,7 +4,7 @@ export default function Infraestructura()
 {
     return(
         <>
-        <section className="infrastructure-section">
+        <section className="infrastructure-section" id="infraestructura">
             <div className="infra-header">
                 <span className="infra-tag">INFRAESTRUCTURA DE ÉLITE</span>
                 <h2>TODO PARA QUE SOLO TE PREOCUPES POR JUGAR</h2>
