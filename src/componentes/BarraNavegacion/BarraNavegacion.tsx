@@ -6,7 +6,7 @@ export default function BarraNavegacion()
         <>
         <nav className="menu">
             <div className="menu_seccionMarca"> 
-                <p className='seccionMarca_titulo'>Complejo la quinta</p>
+                <p className='seccionMarca_titulo'>Complejo la cuarta</p>
                 <p className='seccionMarca_descripcion'>El predio donde nacen los campeones</p>
             </div>
             <div className="menu_seccionOpciones">
