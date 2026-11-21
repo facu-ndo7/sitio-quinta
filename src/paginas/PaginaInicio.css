@@ -1,0 +1,126 @@
+.bannerPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 2rem 4rem;
+    text-align: center;
+    background:
+        radial-gradient(ellipse 26rem 22rem at 50% 35%, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0) 72%),
+        radial-gradient(ellipse 22rem 18rem at 88% 50%, rgba(90, 215, 160, 0.07) 0%, rgba(90, 215, 160, 0) 70%),
+        #0d0d0e;
+}
+
+.bannerPrincipal_titulo {
+    max-width: 68rem;
+    margin: 0;
+    font-family: 'Anton', Impact, 'Arial Narrow', sans-serif;
+    font-size: clamp(2.5rem, 4.4vw, 4rem);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    text-wrap: balance;
+    color: #e5e2e3;
+}
+
+.bannerPrincipal_tituloGradiente {
+    background: linear-gradient(90deg, #f2ca50 0%, #d0b13b 52%, #4fdea3 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.bannerPrincipal_descripcion {
+    max-width: 54rem;
+    margin: 1.8rem 0 0;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.72;
+    color: #d0c5af;
+}
+
+.bannerPrincipal_acciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.125rem;
+    margin-top: 3rem;
+}
+
+.bannerPrincipal_boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    height: 3.6875rem;
+    padding: 0 2.375rem;
+    border-radius: 0.625rem;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.bannerPrincipal_boton svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+}
+
+.bannerPrincipal_boton--primario {
+    border: 0;
+    background: #d4af37;
+    color: #554300;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.25);
+}
+
+.bannerPrincipal_boton--primario:hover {
+    background: #f2ca50;
+    box-shadow: 0 12px 34px rgba(212, 175, 55, 0.35);
+}
+
+.bannerPrincipal_boton--secundario {
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    background: #272726;
+    color: #e5e2e3;
+}
+
+.bannerPrincipal_boton--secundario svg {
+    color: #d4af37;
+}
+
+.bannerPrincipal_boton--secundario:hover {
+    background: #2f2f2d;
+    border-color: rgba(212, 175, 55, 0.55);
+}
+
+.bannerPrincipal_boton:active {
+    transform: translateY(1px);
+}
+
+.bannerPrincipal_boton:focus-visible {
+    outline: 2px solid #f2ca50;
+    outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+    .bannerPrincipal {
+        padding: 1.25rem 1.25rem 3rem;
+    }
+
+    .bannerPrincipal_descripcion {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    .bannerPrincipal_acciones {
+        flex-direction: column;
+        align-self: stretch;
+        margin-top: 2rem;
+    }
+}
